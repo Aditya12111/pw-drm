@@ -1,20 +1,20 @@
 import os
 
-API_ID = API_ID =  28590119
+API_ID = API_ID =  
 
-API_HASH = os.environ.get("API_HASH", "2494557bf21e6c5152f26070aa1a97c7")
+API_HASH = os.environ.get("API_HASH", "")
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "5288671031:AAHUlujBnRaQbgsxszQzZn-voY8UIgSLCyg")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
 PASS_DB = int(os.environ.get("PASS_DB", "721"))
 
-OWNER = int(os.environ.get("OWNER", 1923922961))
+OWNER = int(os.environ.get("OWNER", ))
 
-LOG = -1001605524352,
+LOG = ,
 
-# UPDATE_GRP = -1002140332321, # bot sat group
+# UPDATE_GRP = , # bot sat group
 
-# auth_chats = [5219193259,1327415906]
+# auth_chats = []
 
 try:
     ADMINS=[]
