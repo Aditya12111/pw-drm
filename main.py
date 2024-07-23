@@ -56,17 +56,17 @@ keyboard = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="👨🏻‍💻 Devloper",
-                url="https://t.me/ITS_NOT_ROMEO",
+                url="https://t.me/EX_DOLPHIN",
             ),
             InlineKeyboardButton(
                 text="❣️ GITHUB",
-                url="https://github.com/Devansh20055",
+                url="https://t.me/EX_DOLPHIN",
             ),
         ],
         [
             InlineKeyboardButton(
                 text="🪄 Updates Channel",
-                url="https://t.me/TEAM_SILENT_KING_OG",
+                url="https://t.me/EX_DOLPHIN",
             ),
             
         ],
@@ -80,17 +80,17 @@ Busy = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="👨🏻‍💻 Devloper",
-                url="https://t.me/ITS_NOT_ROMEO",
+                url="https://t.me/EX_DOLPHIN",
             ),
             InlineKeyboardButton(
                 text="❣️ GITHUB",
-                url="https://github.com/Devansh20055",
+                url="https://t.me/EX_DOLPHIN",
             ),
         ],
         [
             InlineKeyboardButton(
                 text="Join to Check My Status ",
-                url="https://t.me/+R3s25D9fxYtiMTE1",
+                url="https://t.me/EX_DOLPHIN",
             ),
             
         ],
@@ -419,13 +419,7 @@ async def account_login(bot: Client, m: Message):
                 if "https://sec1.pw.live/" in url:
                     url = url.replace("https://sec1.pw.live/","https://d1d34p8vz63oiq.cloudfront.net/")
                     print(url)
-                else: 
-                    url = url    
-                print("mpd check")
-                key = await helper.get_drm_keys(url)
-                print(key)
-                await m.reply_text(f"got keys form api : \n`{key}`")
-          
+                
             if "/master.mpd" in url:
                 cmd= f" yt-dlp -k --allow-unplayable-formats -f bestvideo.{quality} --fixup never {url} "
                 print("counted")
@@ -503,7 +497,7 @@ async def account_login(bot: Client, m: Message):
                         continue
 
                 else:
-                    prog = await m.reply_text(f"📥 **Downloading **\n\n**➭ Count » {str(count).zfill(3)} **\n**➭ Video Name » ** `{name}`\n**➭ Quality** » `{raw_text2}`\n**➭ Video Url »** `{url}`\n**➭ Thumbnail »** `{input6.text}` \n\n✨ **Bot Made by Devansh**\n**━━━━━━━✦✗✦━━━━━━━**")
+                    prog = await m.reply_text(f"📥 **Downloading **\n\n**➭ Count » {str(count).zfill(3)} **\n**➭ Video Name » ** `{name}`\n**➭ Quality** » `{raw_text2}`\n**➭ Video Url »** `{url}`\n**➭ Thumbnail »** `{input6.text}` \n\n✨ **Bot Made by @EX_DOLPHIN**\n**━━━━━━━✦✗✦━━━━━━━**")
                     time.sleep(2)
                     res_file = await helper.drm_download_video(url,quality, name,key)
                     filename = res_file
